@@ -1,10 +1,11 @@
 name: >-
-  sameeraapptwo-af2e64b_custom-prod_app_d0a36d2_env_7bec5ac Pipeline (Skyu
+  sameeraapptwo-af2e64b_custom-dev_app_d0a36d2_env_15b51e4 Pipeline (Skyu
   Generated)
 'on':
   push:
-    tags:
-      - v*
+    branches:
+      - main
+      - devtest
     paths-ignore:
       - .github/workflows/**
       - .trivyignore
@@ -12,10 +13,10 @@ name: >-
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_fe558cf3-1afc-4f90-b21c-2cceb46913a7
+    types: pipeline_a50379c3-5f76-45d1-afb1-75e733824c9b
 env:
   ENCODED_PIPELINE_SECRET: >-
-    ${{secrets.DEMOCRONJOB202506_SAMEERAAPPTWOAF2E64B_CUSTOMPROD_APP_D0A36D2_ENV_7BEC5AC}}
+    ${{secrets.DEMOCRONJOB202506_SAMEERAAPPTWOAF2E64B_CUSTOMDEV_APP_D0A36D2_ENV_15B51E4}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   BRANCH_NAME: >-
     ${{github.event.client_payload.branchName || github.event.branch ||
