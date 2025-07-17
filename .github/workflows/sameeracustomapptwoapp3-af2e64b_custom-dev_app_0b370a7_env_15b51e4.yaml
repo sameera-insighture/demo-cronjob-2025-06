@@ -1,23 +1,21 @@
 name: >-
-  sameeracustomapptwoapp3-af2e64b_custom-prod_app_0b370a7_env_7bec5ac Pipeline
+  sameeracustomapptwoapp3-af2e64b_custom-dev_app_0b370a7_env_15b51e4 Pipeline
   (Skyu Generated)
 'on':
   push:
     branches:
-      - prodtest
+      - main
+      - devtest
     tags:
-      - v*
-    paths-ignore:
-      - .github/workflows/**
-      - .trivyignore
-      - Readme.md
-      - README.md
+      - tag
+    paths:
+      - Dockerfile
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_67bef0a1-14bc-4cd4-9ed2-af9d1b39255d
+    types: pipeline_aac14c2c-bfc6-44ce-bdd5-894d8532337b
 env:
   ENCODED_PIPELINE_SECRET: >-
-    ${{secrets.DEMOCRONJOB202506_SAMEERACUSTOMAPPTWOAPP3AF2E64B_CUSTOMPROD_APP_0B370A7_ENV_7BEC5AC}}
+    ${{secrets.DEMOCRONJOB202506_SAMEERACUSTOMAPPTWOAPP3AF2E64B_CUSTOMDEV_APP_0B370A7_ENV_15B51E4}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   BRANCH_NAME: >-
     ${{github.event.client_payload.branchName || github.event.branch ||
