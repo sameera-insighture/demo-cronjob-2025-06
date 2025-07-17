@@ -1,23 +1,21 @@
 name: >-
-  sameeracustomapptwoapp3-af2e64b_custom-staging_app_0b370a7_env_8383085
-  Pipeline (Skyu Generated)
+  sameeracustomapptwoapp3-af2e64b_custom-dev_app_0b370a7_env_15b51e4 Pipeline
+  (Skyu Generated)
 'on':
   push:
     branches:
-      - staging
-      - release/*
-      - stageTest
-    paths-ignore:
-      - .github/workflows/**
-      - .trivyignore
-      - Readme.md
-      - README.md
+      - main
+      - devtest
+    tags:
+      - tag
+    paths:
+      - Dockerfile
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_5fcf0c5d-ac9b-4539-a60e-86647f9ea2ec
+    types: pipeline_fc659704-d9d8-4fab-8d79-dbbe52993ae4
 env:
   ENCODED_PIPELINE_SECRET: >-
-    ${{secrets.DEMOCRONJOB202506_SAMEERACUSTOMAPPTWOAPP3AF2E64B_CUSTOMSTAGING_APP_0B370A7_ENV_8383085}}
+    ${{secrets.DEMOCRONJOB202506_SAMEERACUSTOMAPPTWOAPP3AF2E64B_CUSTOMDEV_APP_0B370A7_ENV_15B51E4}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   BRANCH_NAME: >-
     ${{github.event.client_payload.branchName || github.event.branch ||
