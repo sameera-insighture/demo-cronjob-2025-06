@@ -14,7 +14,7 @@ name: >-
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_b033d3c5-ebde-48b7-8b5b-e383ec1859fb
+    types: pipeline_f3ea8029-a7b4-4473-b37e-655cf3dbfc1f
 env:
   ENCODED_PIPELINE_SECRET: >-
     ${{secrets.DEMOCRONJOB202506_SAMEERACUSTOMAPPTWOAPP3AF2E64B_CUSTOMSTAGING_APP_0B370A7_ENV_8383085}}
