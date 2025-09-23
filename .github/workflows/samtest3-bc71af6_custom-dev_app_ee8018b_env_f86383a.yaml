@@ -1,8 +1,8 @@
-name: samtest3-bc71af6_custom-prod_app_ee8018b_env_1d58089 Pipeline (Skyu Generated)
+name: samtest3-bc71af6_custom-dev_app_ee8018b_env_f86383a Pipeline (Skyu Generated)
 'on':
   push:
-    tags:
-      - v*
+    branches:
+      - main
     paths-ignore:
       - .github/workflows/**
       - .trivyignore
@@ -10,10 +10,10 @@ name: samtest3-bc71af6_custom-prod_app_ee8018b_env_1d58089 Pipeline (Skyu Genera
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_323af55f-8eaa-44c7-abc7-4f7bec9b1d6a
+    types: pipeline_d8951660-42cd-47ae-a886-44ff04b60c1c
 env:
   ENCODED_PIPELINE_SECRET: >-
-    ${{secrets.DEMOCRONJOB202506_SAMTEST3BC71AF6_CUSTOMPROD_APP_EE8018B_ENV_1D58089}}
+    ${{secrets.DEMOCRONJOB202506_SAMTEST3BC71AF6_CUSTOMDEV_APP_EE8018B_ENV_F86383A}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
   BRANCH_NAME: >-
     ${{github.event.client_payload.branchName || github.event.branch ||
