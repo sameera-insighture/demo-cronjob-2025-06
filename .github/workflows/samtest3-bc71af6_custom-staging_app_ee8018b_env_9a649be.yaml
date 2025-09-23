@@ -13,7 +13,7 @@ name: >-
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_c8e65317-571b-411e-84e4-930d4e95cbe9
+    types: pipeline_1e1a6bca-dc08-4d63-8ecb-d5e0e8b0591e
 env:
   ENCODED_PIPELINE_SECRET: >-
     ${{secrets.DEMOCRONJOB202506_SAMTEST3BC71AF6_CUSTOMSTAGING_APP_EE8018B_ENV_9A649BE}}

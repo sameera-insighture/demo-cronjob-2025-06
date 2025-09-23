@@ -10,7 +10,7 @@ name: samtest3-bc71af6_custom-dev_app_ee8018b_env_f86383a Pipeline (Skyu Generat
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_d8951660-42cd-47ae-a886-44ff04b60c1c
+    types: pipeline_936693cd-68eb-49a7-876b-0390b59ebf98
 env:
   ENCODED_PIPELINE_SECRET: >-
     ${{secrets.DEMOCRONJOB202506_SAMTEST3BC71AF6_CUSTOMDEV_APP_EE8018B_ENV_F86383A}}
